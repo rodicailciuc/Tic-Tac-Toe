@@ -1,0 +1,15 @@
+.opacity-show {
+    opacity: 1 !important;
+}
+
+.opacity-hide {
+    opacity: 0;
+}
+
+.displayNone {
+    display: none;
+}
+
+.displayBlock {
+    display: block;
+}

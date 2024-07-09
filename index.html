@@ -3,28 +3,35 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="./assets/tic-tac-toe.png"
+            type="image/x-icon"
+        />
         <link rel="stylesheet" href="./styles/style.css" />
-        <title>Tic Tac Toe</title>
+        <title>Tic tac toe Game</title>
     </head>
     <body>
-        <div class="calculator-container">
-            <div class="input-container">
-                <input
-                    type="number"
-                    id="num-one"
-                    class="input-number"
-                    placeholder="Enter first number"
-                />
-                <input
-                    type="number"
-                    id="num-two"
-                    class="input-number"
-                    placeholder="Enter second number"
-                />
+        <div class="bg"></div>
+        <header class="header">
+            <div class="logo">
+                <div class="logo-text">
+                    Tic
+                    <div class="tac">Tac</div>
+                    Toe
+                </div>
             </div>
-            <button type="button" id="sum" class="sum-button">Sum</button>
-            <div id="output" class="output"></div>
+            <p class="quote">Let's Play and Have Fun!</p>
+        </header>
+        <div id="tic-tac-toe-container" class="tic-tac-toe-container">
+            <div id="game-frame" class="game-frame">
+                <p class="ready">Ready for the game?</p>
+                <button id="start-game-btn" class="start-game-btn">Play</button>
+                <div id="squareContainer" class="squareContainer"></div>
+                <button class="repeat-game displayNone">Play Again</button>
+            </div>
         </div>
+
         <script type="module" src="./src/init.js"></script>
     </body>
 </html>

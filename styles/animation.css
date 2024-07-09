@@ -1,0 +1,23 @@
+@keyframes rocking {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    0% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

@@ -1,8 +1,8 @@
 const dom = {
-    num1: document.getElementById('num-one'),
-    num2: document.getElementById('num-two'),
-    btn: document.getElementById('sum'),
-    output: document.getElementById('output'),
+    squareContainer: document.getElementById('squareContainer'),
+    startGame: document.getElementById('start-game-btn'),
+    repeatGame: document.querySelector('.repeat-game'),
+    ready: document.querySelector('.ready'),
 };
 
 export default dom;
