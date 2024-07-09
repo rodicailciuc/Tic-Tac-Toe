@@ -193,13 +193,7 @@ body {
     letter-spacing: 0.2rem;
     color: white;
 }
-.winning-line {
-    position: absolute;
-    height: 5px;
-    background-color: red;
-    z-index: 1;
-    transform-origin: 0 0; /* This ensures the rotation starts from the start point */
-}
+
 
 .winning-line {
     height: 5px;
