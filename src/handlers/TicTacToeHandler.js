@@ -1,6 +1,6 @@
 import dom from '../dom.js';
 import data from '../data.js';
-import TicTacToe from '../modules/ticTacToe.js';
+import TicTacToe from '../modules/TicTacToe.js';
 
 const TicTacToeHandler = () => {
     dom.startGame.classList.add('opacity-hide');
