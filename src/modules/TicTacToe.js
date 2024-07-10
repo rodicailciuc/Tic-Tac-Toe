@@ -57,7 +57,7 @@ class TicTacToe {
 
         for (const line of winLines) {
             const [a, b, c] = line.map(
-                ([x, y]) => this.squareFields[x][y].sign,
+                ([x, y]) => this.squareFields[x][y].sign
             );
             if (a && a === b && a === c) {
                 gameStatus.gameInProgress = false;
@@ -105,14 +105,12 @@ class TicTacToe {
         const endXPos = endRect.left + endRect.width / 2 - containerRect.left;
         const endYPos = endRect.top + endRect.height / 2 - containerRect.top;
 
+        const length = Math.hypot(endXPos - startXPos, endYPos - startYPos);
         const angle =
             (Math.atan2(endYPos - startYPos, endXPos - startXPos) * 180) /
             Math.PI;
 
-        winningLine.style.width = `${Math.hypot(
-            endXPos - startXPos,
-            endYPos - startYPos,
-        )}px`;
+        winningLine.style.width = `${length}px`;
         winningLine.style.transform = `rotate(${angle}deg)`;
         winningLine.style.position = 'absolute';
         winningLine.style.left = `${startXPos}px`;
